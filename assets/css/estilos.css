@@ -4,8 +4,42 @@
     box-sizing: border-box;
 }
 
+/* Grillas */
+#grilla__index {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "main__servicios"
+      "footer";
+}
+ 
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ main {
+    grid-area: main;     
+ }
+ main__servicios {
+    grid-area: main__servicios;     
+ }
+
+ 
+
+ 
+
+/* Fin de Grillas */
+
 /* Menu */
 .header{
+    display:flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #fff;
 }
 
@@ -16,14 +50,12 @@
 }
 
 .header__nav{
-    display:flex;
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
   }
 
 .nav__menu__item{
     display: inline-block;
+    
 }
 .nav__menu__link{
     background: transparent;
@@ -60,12 +92,14 @@
     font-size: 3rem;
     text-shadow: 2px 2px 2px #000;
     font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
 }
 .hero__conte p {
     font-size: 2.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
+    text-align: center;
 }
 .main{
     height: 100% ; 
@@ -80,6 +114,8 @@
 
 .main__servicios{
     display: flex;
+    flex-direction: row;
+    align-items: center;
         
 }
 .article__1{
@@ -105,10 +141,12 @@
     
 }
 .articulos{
+    
     color: #000;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    
 }
 .articulos__imagen{
     display: block;
@@ -124,7 +162,6 @@
     
     background: Linear-gradient(white, #3fa6e2);
     position: relative;
-
     width: 100%;
       
 }
@@ -220,7 +257,7 @@
 
   /* fin formulario de contacto */
 
-.main__nosotros{
+.nosotros__section{
     color: #726659;
     padding: 40px 40px;
     display: flex;
@@ -317,6 +354,30 @@
     gap: 50px;
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 375px){
+    .header{
+        flex-wrap: nowrap;
+    }
+    .header__logo{
+        width: 8em;
+        height: 8em;
+        margin: 20px;
+    }
+    .main__servicios {
+        flex-direction: column;
+    }
+    .articulos__titulos{
+        font-size: 1.2em;
+                
+    }
+    .articulos{
+        font-size: 0.7em;
+        }
+
+}
+    
 
 
 
