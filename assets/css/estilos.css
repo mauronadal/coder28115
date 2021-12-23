@@ -43,7 +43,6 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
     background: linear-gradient(86deg, rgba(172,221,53,0.6474964985994398) 0%, rgba(0,212,255,0.22172619047619047) 67%);
     
 }
@@ -92,8 +91,23 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-       
+    animation: animacion_texto 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+@keyframes animacion_texto {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
 .hero__conte h1 {
     color: #6fdb45;
     font-size: 3rem;
@@ -161,6 +175,11 @@
     margin-right: auto;
     width: 290px;
     height: 290px;
+    transition: transform 0.5s
+    
+}
+.articulos__imagen:hover{
+    transform: rotate(2deg);
 }
 
 /* Fin de Index.html*/
@@ -174,7 +193,6 @@
     bottom: 0;
     width: 100%;
     
-      
 }
 
 .footer h3 {
