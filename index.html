@@ -1,69 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Novem Evolution</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/estilos.css">
-</head>
-<body class="body">
-    <div id="grilla__index">
-        <header class="header">
-            <a href="#"><img class="header__logo" src="./assets/imagenes/logo.png" alt="logo"></a>
-            <nav class="header__nav">
-                
-                <ul class="header__nav__menu">
-                    <li class="nav__menu__item"><a class="nav__menu__link" href="#">Inicio</a></li>
-                    <li class="nav__menu__item"><a class="nav__menu__link" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li class="nav__menu__item"><a class="nav__menu__link" href="./pages/servicios.html">Servicios</a></li>
-                    <li class="nav__menu__item"><a class="nav__menu__link" href="./pages/clientes.html">Clientes</a></li>
-                    <li class="nav__menu__item"><a class="nav__menu__link" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-     
-      
-    <main class="main">
-        <section class="hero">
+ 
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#"><img class="nav__logo" src="./assets/imagenes/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mg-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="conteiner-fluid">
+      <div class="row">
+        <div class="col">
+          <section class="hero">
             <div class="hero__conte">
                 <h1>n o v e m</h1>
                 <p>Evolucionamos junto a vos!</p>
-          
             </div> 
         </section>
-       
-       
-        <section class="main__servicios">
-            <article class="article__1">
-                <p class="articulos__titulos">IoT -Internet de las cosas</p>
-                <p class="articulos">Soluciones en Tableros de Control, Dispositivos con</p>
-                <p class="articulos">conectividad, Desarrollo de monitoreo y controles a medida </p>
-                <img class="articulos__imagen" src="./assets/imagenes/iot.jpg" alt="IoT"> 
-            </article>
-            <article class="article__2">
-                <p class="articulos__titulos">Desarrollo Web</p>
-                <p class="articulos">Diseño de Aplicaciones Web, Mobile, Base de Datos</p>
-                <img class="articulos__imagen" src="./assets/imagenes/develop.png" alt="Desarrollo Web">
-            </article>
-            <article class="article__3">
-                <p class="articulos__titulos">Desarrollo de Hardware</p>
-                <p class="articulos">Soluciones a gran escala basadas en Raspberry Pi</p>
-                <p class="articulos">y soluciones básicas basadas en Arduino</p>
-                <img class="articulos__imagen" src="./assets/imagenes/arduino.jpg" alt="Desarrollo de Hardware">
-            </article>
-            
-        </section>
-    </main>
-    
-    <footer class="footer">
-        <p>info@novem.com.ar</p>
-        <p>+59 2314 416240</p>
-        <p>Bolívar - Buenos Aires - Argentina</p>
-    
-    </footer>
-    </div>
-    
-</body>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <article class="article__1">
+            <p class="articulos__titulos">IoT -Internet de las cosas</p>
+            <p class="articulos">Soluciones en Tableros de Control, Dispositivos con</p>
+            <p class="articulos">conectividad, Desarrollo de monitoreo y controles a medida </p>
+            <img class="articulos__imagen" src="./assets/imagenes/iot.jpg" alt="IoT"> 
+        </article>
+        </div>
+        <div class="col">
+          <article class="article__2">
+            <p class="articulos__titulos">Desarrollo Web</p>
+            <p class="articulos">Diseño de Aplicaciones Web, Mobile, Base de Datos</p>
+            <img class="articulos__imagen" src="./assets/imagenes/develop.png" alt="Desarrollo Web">
+        </article>
+        </div>
+        <div class="col">
+          <article class="article__3">
+            <p class="articulos__titulos">Desarrollo de Hardware</p>
+            <p class="articulos">Soluciones a gran escala basadas en Raspberry Pi</p>
+            <p class="articulos">y soluciones básicas basadas en Arduino</p>
+            <img class="articulos__imagen" src="./assets/imagenes/arduino.jpg" alt="Desarrollo de Hardware">
+        </article> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <footer class="footer">
+            <p>info@novem.com.ar</p>
+            <p>+59 2314 416240</p>
+            <p>Bolívar - Buenos Aires - Argentina</p>
+        
+        </footer>
+        </div>
+      </div>
 
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   
+  </body>
 </html>
