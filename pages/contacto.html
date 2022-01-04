@@ -39,19 +39,29 @@
       </div>
     </nav>
  
-    <main class="main" style="height: 70vh;">
+    <main class="main" style="height: 72vh;">
         
         <h2>Formulario de Contacto</h2>
-                  
-
-        <form class="formulario">
-                
-                  <input id="nombre" type="text" placeholder="Apellido y Nombre">
-                  <input id="email" type="text" placeholder="E-MAIL">
-                  <textarea id="mensaje" type="text" placeholder="Mensaje"></textarea>
-                  <input id="submit" type="submit" value="Enviar">
-          
-        </form>
+        <div class="container-fluid ">
+          <form class="formulario">
+            <div class="mb-3">
+              <label for="exampleInputNombre1" class="form-label">Nombre y Apellido</label>
+              <input type="nombre" class="form-control" id="exampleInputNombre1">
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputMensaje1" class="form-label">Mensaje</label>
+              <input type="mensaje" class="form-control" id="exampleInputMensaje1">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>       
+        
     </main>
     
 
