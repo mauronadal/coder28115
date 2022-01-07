@@ -52,35 +52,8 @@
     flex-direction: column;
     animation: animacion_texto 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-@keyframes animacion_texto {
-    0% {
-      letter-spacing: 1em;
-      transform: translateZ(400px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      transform: translateZ(0);
-      opacity: 1;
-    }
-  }
+
   
-.hero__conte h1 {
-    color: #6fdb45;
-    font-size: 3rem;
-    text-shadow: 2px 2px 2px #000;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-}
-.hero__conte p {
-    font-size: 2.5rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    text-align: center;
-}
 .main{
     height: 100% ; 
 }
@@ -92,12 +65,7 @@
     font-size: 30px;
 }
 
-.main__servicios{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-        
-}
+
 .article__1{
     flex: 1 1 100%;
     padding: 2rem;
@@ -224,24 +192,24 @@
   }
   
   #submit {
-    width: 470px;
+    background: transparent;
+    border-bottom: solid 2px #3fa6e2;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #3fa6e2;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: backgroumd 0.5s color 0.4s;
+    font-size: 1rem;
+    display: block;
     
-    padding: 0;
-    margin: -5px 0px 0px 0px;
     
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    color: #b3aca7;
-    
-    outline:none;
-    cursor: pointer;
-    
-    border: solid 1px #b3aca7;
-    border-top: none;
   }
   
   #submit:hover {
-    color: #e2dedb;
+  
+    background: #3fa6e2;
+    color: #fff;
+    border-radius: 4px;
   }
 
   /* fin formulario de contacto */
@@ -278,14 +246,7 @@
 
   /* Servicios */
 
- .servicios__main{
-    display: inline-block;
-    width: 100%;
-    
-    
-  }
-
- 
+  
 #servicios__1{
     display: flex;
     padding: 2rem;
@@ -384,13 +345,7 @@
     }
       /* media queries servicios.html */
 
- .servicios__main{
-    display: inline-block;
-    width: 100%;
-    
-    
-  }
-
+ 
  
 #servicios__1{
     display: flex;
@@ -464,22 +419,20 @@
 /* media queries contacto.html*/
 .formulario {
     position: relative;
-    width: 320px;
+    width: 300px;
     align-items: center;
   }
   
   input {
-    width: 300px;
+    width: 280px;
   }
       
   textarea {
-    width: 300px;
-    max-width: 300px;
+    width: 280px;
+    max-width: 280px;
   }
       
-  #submit {
-    width: 300px;
-  }
+  
   
 }
 
