@@ -1,0 +1,126 @@
+@media screen and (max-width: 375px){
+    .header{
+        flex-wrap: nowrap;
+        &__logo{
+            width: 8em;
+            height: 8em;
+            margin: 15px;
+        }
+    }
+    .main__servicios {
+        flex-direction: column;
+    }
+    .articulos__titulos{
+        font-size: 1.2em;
+                
+    }
+    .articulos{
+        font-size: 0.7em;
+        }
+    /* media queries nosotros.html*/
+    .nosotros__section{
+        display: mow-flex;
+    }
+    .img__nosotros{
+        width: 20%;
+        height: 20%;
+    }
+      /* media queries servicios.html */
+
+ 
+ 
+#servicios__1{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 50px;
+   
+}
+#servicios__2{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 50px;
+    
+}
+#servicios__3{
+   display: flex;
+   flex-direction: column;
+    padding: 2rem;
+    gap: 50px;
+}
+.servicios__contenido{
+    width: 100%;
+    
+
+}
+.servicios__titulos{
+    color: #000;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.servicios__texto{
+    padding: 10px;
+    color: #726659;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.servicios__imagen1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+.servicios__imagen2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+.servicios__imagen3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+.servicios__lista{
+    padding: 10px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 1.2rem;
+    color: #3fa6e2;
+}
+
+
+/* media queries contacto.html*/
+.formulario {
+    position: relative;
+    width: 300px;
+    align-items: center;
+  }
+  
+  input {
+    width: 280px;
+  }
+      
+  textarea {
+    width: 280px;
+    max-width: 280px;
+  }
+      
+  
+  
+}
+
+@media screen and (min-width: 375px){
+    .nosotros__section{
+        display: flex;
+    }
+    
+}
