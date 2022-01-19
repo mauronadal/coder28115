@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .navbar {
   padding: 10px 20px;
@@ -19,10 +20,11 @@
   text-decoration: none;
   color: #3fa6e2;
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: backgroumd 0.5s color 0.4s;
   transition: backgroumd 0.5s color 0.4s;
   font-size: 1rem;
   display: block; }
-  .nav-link :hover {
+  .nav-link:hover {
     background: #3fa6e2;
     color: #fff;
     border-radius: 4px; }
@@ -42,15 +44,21 @@
     font-size: 30px; }
 
 .article__1 {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   padding: 2rem; }
 
 .article__2 {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   padding: 2rem; }
 
 .article__3 {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   padding: 2rem; }
 
 .articulos {
@@ -69,9 +77,44 @@
     margin-right: auto;
     width: 290px;
     height: 290px;
-    transition: transform 0.5s; }
-    .articulos__imagen :hover {
-      transform: rotate(2deg); }
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+    .articulos__imagen:hover {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg); }
+
+.boton, .boton--enviar, .boton--limpiar {
+  background: transparent;
+  border-bottom: solid 2px #3fa6e2;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #12181b;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: backgroumd 0.5s color 0.4s;
+  transition: backgroumd 0.5s color 0.4s;
+  font-size: 1rem;
+  border-radius: 4px; }
+  .boton:hover, .boton--enviar:hover, .boton--limpiar:hover {
+    background: #3fa6e2;
+    color: #fff;
+    border-radius: 4px; }
+
+.boton--enviar {
+  background: #a3eeb0; }
+
+.boton--limpiar {
+  background: #f5c0c0; }
+
+.tituloForm {
+  padding-top: 15px;
+  font-size: 30px;
+  color: #52a3ee;
+  text-align: center; }
+  @media screen and (max-width: 320px) {
+    .tituloForm {
+      font-size: 20px; } }
 
 .formulario {
   position: relative;
@@ -89,7 +132,7 @@ input {
   color: #726659;
   border: solid 1px #b3aca7;
   border-bottom: none; }
-  input :hover {
+  input:hover {
     background: #b3aca7;
     color: #e2dedb; }
 
@@ -105,30 +148,17 @@ textarea {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
   border: solid 1px #b3aca7; }
-  textarea :hover {
+  textarea:hover {
     background: #b3aca7;
     color: #e2dedb; }
-
-#submit {
-  background: transparent;
-  border-bottom: solid 2px #3fa6e2;
-  padding: 10px 30px;
-  text-decoration: none;
-  color: #3fa6e2;
-  font-family: Arial, Helvetica, sans-serif;
-  transition: backgroumd 0.5s color 0.4s;
-  font-size: 1rem;
-  display: block; }
-  #submit :hover {
-    background: #3fa6e2;
-    color: #fff;
-    border-radius: 4px; }
 
 .nosotros__section {
   color: #726659;
   padding: 40px 40px;
   gap: 50px;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .nosotros__imagen {
   width: 100%; }
@@ -138,7 +168,8 @@ textarea {
   height: 40%; }
 
 .nosotros__contenido {
-  flex-basis: 100%; }
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
 
 .nosotros__titulo {
   font-family: Arial, Helvetica, sans-serif;
@@ -149,16 +180,22 @@ textarea {
   font-size: 1.5rem; }
 
 #servicios__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2rem;
   gap: 50px; }
 
 #servicios__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2rem;
   gap: 50px; }
 
 #servicios__3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2rem;
   gap: 50px; }
@@ -227,13 +264,17 @@ textarea {
 
 @media screen and (max-width: 375px) {
   .header {
-    flex-wrap: nowrap; }
-  .header__logo {
-    width: 8em;
-    height: 8em;
-    margin: 15px; }
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .header__logo {
+      width: 8em;
+      height: 8em;
+      margin: 15px; }
   .main__servicios {
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .articulos__titulos {
     font-size: 1.2em; }
   .articulos {
@@ -246,18 +287,33 @@ textarea {
     height: 20%; }
   /* media queries servicios.html */
   #servicios__1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 2rem;
     gap: 50px; }
   #servicios__2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 2rem;
     gap: 50px; }
   #servicios__3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 2rem;
     gap: 50px; }
   .servicios__contenido {
@@ -300,7 +356,9 @@ textarea {
   .formulario {
     position: relative;
     width: 300px;
-    align-items: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   input {
     width: 280px; }
   textarea {
@@ -309,4 +367,7 @@ textarea {
 
 @media screen and (min-width: 375px) {
   .nosotros__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; } }
+/*# sourceMappingURL=estilossass.css.map */

@@ -56,7 +56,7 @@
         height: 290px;
         transition: transform 0.5s;
         
-        & :hover{
+        &:hover{
             transform: rotate(2deg);
         }
     }

@@ -1,0 +1,29 @@
+.boton {
+    background: transparent;
+    border-bottom: solid 2px #3fa6e2;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #12181b;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: backgroumd 0.5s color 0.4s;
+    font-size: 1rem;
+    border-radius: 4px;;
+    
+    &:hover {
+    
+      background: #3fa6e2;
+      color: #fff;
+      border-radius: 4px;
+    }
+    
+  }
+  
+  .boton--enviar{
+    @extend .boton;
+    background: rgb(163, 238, 176);
+  }
+
+  .boton--limpiar{
+    @extend .boton;
+    background: rgb(245, 192, 192);
+}

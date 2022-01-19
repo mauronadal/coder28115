@@ -1,5 +1,6 @@
 @import "./variables";
 
+
 .navbar{
     padding: 10px 20px;
     background: $background-main;
@@ -20,7 +21,8 @@
     transition: backgroumd 0.5s color 0.4s;
     font-size: 1rem;
     display: block;
-    & :hover{
+    
+    &:hover{
         background: #3fa6e2;
         color: #fff;
         border-radius: 4px;
