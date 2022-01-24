@@ -8,11 +8,20 @@
     <title>Novem - Inicio</title>
     <meta name="description" content="Desarrollo de hardware y software. Pensado en el futuro y en constante evolución, creando herramientas únicas en el mercado.Servicios de desarrollo de hardware y software, aplicaciones web, internet de las cosas">
     <meta name="keywords" content="Arduino, Raspberry, Android, Iot, HTML"> 
+    <!-- OpenGraph -->
+    <meta property="og:url" content="http://www.novem.com.ar"/>
+    <meta property="og:title" content="Novem - Inicio"/>
+    <meta property="og:image" content="https://www.novem.com.ar/assets/imagenes/logo.png"/>
+    <meta property="og:description" content="Desarrollo de hardware y software. Pensado en el futuro y en constante evolución, creando herramientas únicas en el mercado.Servicios de desarrollo de hardware y software, aplicaciones web, internet de las cosas"/>
+    <meta property="og:type" content="website"/>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/estilossass.css">
- 
+     
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -89,7 +98,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col" data-aos="fade-right">
           <article class="article__1">
             <p class="articulos__titulos">IoT -Internet de las cosas</p>
             <p class="articulos">Soluciones en Tableros de Control, Dispositivos con</p>
@@ -97,14 +106,14 @@
             <img class="articulos__imagen" src="./assets/imagenes/iot.jpg" alt="IoT"> 
         </article>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right">
           <article class="article__2">
             <p class="articulos__titulos">Desarrollo Web</p>
             <p class="articulos">Diseño de Aplicaciones Web, Mobile, Base de Datos</p>
             <img class="articulos__imagen" src="./assets/imagenes/develop.png" alt="Desarrollo Web">
         </article>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right">
           <article class="article__3">
             <p class="articulos__titulos">Desarrollo de Hardware</p>
             <p class="articulos">Soluciones a gran escala basadas en Raspberry Pi</p>
@@ -127,13 +136,12 @@
 
     </div>
 
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    AOS.init();
+ </script>
+
   </body>
 </html>
