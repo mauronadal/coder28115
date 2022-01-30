@@ -107,6 +107,9 @@
 .boton--limpiar {
   background: #f5c0c0; }
 
+.sectionForm {
+  width: auto; }
+
 .tituloForm {
   padding-top: 15px;
   font-size: 30px;
@@ -152,20 +155,12 @@ textarea {
     background: #b3aca7;
     color: #e2dedb; }
 
-.nosotros__section {
-  color: #726659;
-  padding: 40px 40px;
-  gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .nosotros__imagen {
   width: 100%; }
 
 .img__nosotros {
-  width: 40%;
-  height: 40%; }
+  width: 20%;
+  height: 20%; }
 
 .nosotros__contenido {
   -ms-flex-preferred-size: 100%;
@@ -249,12 +244,6 @@ textarea {
   bottom: 0;
   width: 100%;
   height: 140px; }
-  .footer h3 {
-    padding: 2rem;
-    color: #000;
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; }
   .footer p {
     color: #000;
     font-size: 1rem;
@@ -262,7 +251,7 @@ textarea {
     text-align: center;
     padding-top: 10px; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
@@ -280,8 +269,6 @@ textarea {
   .articulos {
     font-size: 0.7em; }
   /* media queries nosotros.html*/
-  .nosotros__section {
-    display: mow-flex; }
   .img__nosotros {
     width: 20%;
     height: 20%; }
@@ -295,7 +282,7 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 2rem;
-    gap: 50px; }
+    gap: 10px; }
   #servicios__2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,7 +292,7 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 2rem;
-    gap: 50px; }
+    gap: 10px; }
   #servicios__3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -315,7 +302,7 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 2rem;
-    gap: 50px; }
+    gap: 10px; }
   .servicios__contenido {
     width: 100%; }
   .servicios__titulos {
@@ -365,9 +352,20 @@ textarea {
     width: 280px;
     max-width: 280px; } }
 
-@media screen and (min-width: 375px) {
-  .nosotros__section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+@media screen and (max-width: 768px) {
+  /* media queries servicios.html */
+  .servicios__imagen1 {
+    width: 200px;
+    height: 200px; }
+  .servicios__imagen2 {
+    width: 200px;
+    height: 200px; }
+  .servicios__imagen3 {
+    width: 200px;
+    height: 200px; }
+  .servicios__lista {
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    color: #3fa6e2; } }
 /*# sourceMappingURL=estilossass.css.map */

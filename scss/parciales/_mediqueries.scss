@@ -1,4 +1,4 @@
-@media screen and (max-width: 375px){
+@media screen and (max-width: 425px){
     .header{
         flex-wrap: nowrap;
         &__logo{
@@ -18,9 +18,7 @@
         font-size: 0.7em;
         }
     /* media queries nosotros.html*/
-    .nosotros__section{
-        display: mow-flex;
-    }
+  
     .img__nosotros{
         width: 20%;
         height: 20%;
@@ -33,21 +31,21 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    gap: 50px;
+    gap: 10px;
    
 }
 #servicios__2{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    gap: 50px;
+    gap: 10px;
     
 }
 #servicios__3{
    display: flex;
    flex-direction: column;
     padding: 2rem;
-    gap: 50px;
+    gap: 10px;
 }
 .servicios__contenido{
     width: 100%;
@@ -118,9 +116,37 @@
   
 }
 
-@media screen and (min-width: 375px){
-    .nosotros__section{
-        display: flex;
-    }
-    
+@media screen and (max-width: 768px){
+   
+      /* media queries servicios.html */
+
+
+.servicios__imagen1{
+    width: 200px;
+    height: 200px;
 }
+.servicios__imagen2{
+    width: 200px;
+    height: 200px;
+}
+.servicios__imagen3{
+    width: 200px;
+    height: 200px;
+}
+.servicios__lista{
+    padding: 10px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 1.2rem;
+    color: #3fa6e2;
+}
+
+   
+  
+  
+}
+
+
+
+
+
+
